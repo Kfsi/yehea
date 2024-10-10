@@ -1,0 +1,108 @@
+/* تنسيقات أساسية */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #dbdbdb;
+    direction: rtl;
+}
+
+/* خلفية بانر متحركة */
+.hero-section {
+    background: url('pdokkpl.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 1;
+    color: #6e6e6e;
+    animation: fadeIn 3s ease;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+
+/* تأثير ظهور */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* قسم التعريف */
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about h2, .team h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #2563eb;
+}
+
+footer {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
